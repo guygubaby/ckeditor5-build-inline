@@ -21,6 +21,8 @@ import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import { Font, FontBackgroundColor } from '@ckeditor/ckeditor5-font'
+import { Alignment } from '@ckeditor/ckeditor5-alignment';
+
 
 export default class InlineEditor extends InlineEditorBase {
 	public static override builtinPlugins = [
@@ -50,8 +52,10 @@ export default class InlineEditor extends InlineEditorBase {
 		Table,
 		TableToolbar,
 		TextTransformation,
+		
 		Font,
 		FontBackgroundColor,
+		Alignment,
 	];
 
 	public static override defaultConfig = {
