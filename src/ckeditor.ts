@@ -22,6 +22,7 @@ import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import { Font, FontBackgroundColor } from '@ckeditor/ckeditor5-font'
 import { Alignment } from '@ckeditor/ckeditor5-alignment';
+import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 
 
 export default class InlineEditor extends InlineEditorBase {
@@ -59,6 +60,8 @@ export default class InlineEditor extends InlineEditorBase {
 		Font,
 		FontBackgroundColor,
 		Alignment,
+
+		RemoveFormat,
 	];
 
 	public static override defaultConfig = {
